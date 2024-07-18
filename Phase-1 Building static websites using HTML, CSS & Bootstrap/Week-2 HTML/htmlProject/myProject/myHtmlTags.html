@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Common HTML Tags in Use</title>
+  </head>
+  <body>
+    <header>
+      <h1><i>How to use common HTML tags</i></h1>
+      <nav>
+        <ul class="someParagraph">
+          <li><a href="https://www.google.com/">Link to Google</a></li>
+          <li><a href="https://www.amazon.com/">Link to amazon</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="someSection">
+      <div>
+        <h2 id="someId">Here is one section</h2>
+        <p class="someParagraph">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla et aut
+          nostrum eaque blanditiis, non pariatur sequi iure! Nihil soluta,
+          laboriosam sapiente adipisci quia impedit velit possimus voluptates
+          cumque ipsum. Lorem ipsum dolor sit amet consectetur, adipisicing
+          elit. Voluptate neque alias ex sapiente voluptates ipsum sunt tempore
+          ipsa maxime soluta laborum magni maiores, dolores aspernatur
+          reprehenderit numquam dolore doloribus perspiciatis?
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum esse
+          nulla tenetur molestias minus magni libero voluptatibus dolores
+          perspiciatis debitis? Molestias a qui ipsam quae modi quibusdam,
+          voluptate quisquam. LaboreDonec sed est dictum, egestas lacus et,
+          bibendum tortor. <br />
+          Fusce in mauris et nibh vulputate rutrum id vel elit. Nam a dolor vel
+          ligula ultricies mollis blandit cursus sapien. Donec mattis tortor
+          odio, eu ultricies ipsum faucibus nec. Pellentesque ullamcorper ante
+          justo, et tincidunt mauris ultricies non. Proin in elit vel enim
+          interdum hendrerit. In vitae vestibulum neque. Ut a eleifend tellus,
+          congue gravida tortor. Curabitur ultricies eu nibh nec ultricies.
+          Suspendisse aliquet tempus sem, sit amet congue ex placerat ut. Nulla
+          a diam et est porta gravida. Maecenas sagittis dolor sit amet sem
+          accumsan iaculis. Lorem ipsum dolor sit amet, consectetur adipiscing
+          elit. Cras fringilla lobortis augue, id dignissim nunc mollis sodales.
+        </p>
+      </div>
+    </section>
+    <hr />
+    <section>
+      <div>
+        <h2>Here is Another Section</h2>
+        <ol>
+          <li>First Item</li>
+          <li>Second Item</li>
+          <li>Third Item</li>
+        </ol>
+        <h2>Sample Form</h2>
+        <p>Join the Network</p>
+        <form action="#">
+          <label for="fname">First Name:</label><br />
+          <input
+            type="text"
+            id="fname"
+            name="fname"
+            value=""
+            placeholder="First Name"
+          /><br />
+          <label for="lname">Last Name:</label><br />
+          <input
+            type="text"
+            id="lname"
+            name="lname"
+            value=""
+            placeholder="Last Name"
+          /><br />
+          <label for="email">Email Address:</label><br />
+          <input
+            type="text"
+            id="email"
+            name="email"
+            value=""
+            placeholder="Email Address"
+          /><br /><br />
+          <input type="password" placeholder="Password" /><br /><br />
+          <label for="date">Your Date of Birth:</label>
+          <input type="date" placeholder="DOB" /><br /><br />
+          <textarea
+            name="message"
+            id=""
+            cols="30"
+            rows="10"
+            placeholder="Your message Here"
+          ></textarea
+          ><br /><br />
+          <button type="submit" value="Submit">Agree and Join</button>
+        </form>
+      </div>
+    </section>
+    <hr />
+    <section>
+      <div>
+        <h2>Formating Tags</h2>
+        <p>
+          Superscript <br />
+          <br />2 <sup>nd</sup> <br /><br />
+          Subscript <br />
+          <br />
+          H <sub>2</sub>O <br />
+          <em>Emphasized</em> <br />
+          <strong>Strong. Mostly the same as bold</strong><br />
+          <small>Smaller text</small>
+        </p>
+        <br />
+        <p><b>Here is bold text</b> followed by some regular texts.</p>
+        <center>We can use center tag to center elements</center>
+      </div>
+    </section>
+    <section>
+      <div>
+        <h2>Media Tags</h2>
+        <h3>Images</h3>
+        <img src="myImages/dog.jpg" alt="" />
+        <h3>Image Using the figure tag</h3>
+        <figure>
+          <img src="myImages/dog.jpg" alt="" />
+          <figcaption>Cute Dog</figcaption>
+        </figure>
+        <h3>Videos</h3>
+        <p>
+          Note: The video is included inside the images folder which is not good
+          practice. But it is ok for now.
+        </p>
+        <video width="560" height="315" controls>
+          <source src="./myImages/large.mp4" type="video/mp4" />
+          <!-- what is the difference putting the sourse inside video tag and source tag -->
+          Your browser does not support the video tag
+        </video>
+        <h3>Embed YouTube video Using iframe tag</h3>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/Pzgq6eXHPgU?si=NaKf9ixcUeuRbQFP"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+          >HTML Basics Part-II Live Class</iframe
+        >
+      </div>
+    </section>
+    <section>
+      <h2>Download Image file</h2>
+      <a href="./myImages/dog.jpg" download="./myImages/dog.jpg"
+        ><img src="./myImages/dog.jpg" alt=""
+      /></a>
+    </section>
+
+    <footer>
+      <h2>Footer Links</h2>
+      <ul type="none">
+        <li>
+          <a href="https://www.evangadi.com/" target="_blank">Evangadi</a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>
