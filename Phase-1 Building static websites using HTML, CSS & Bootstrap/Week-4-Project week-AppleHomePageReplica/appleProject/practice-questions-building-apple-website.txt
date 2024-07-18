@@ -1,0 +1,49 @@
+Building Apple.com’s Homepage
+    1. Build “Apple.com’s Homepage”
+        ● Steps:
+        
+            ○ Start by building ONLY the HTML structure of Apple’s homepage.
+            There is a video to guide you how to build the website
+            step-by-step:
+            https://www.youtube.com/watch?v=cWqmE5sc_cU
+
+            ○ Start adding names to your HTML (Classes and IDs)
+
+            ○ Start styling your HTML using CSS
+            NOTE:
+                ■ Always test every single line of code you write. Open it on
+                your browser and check if it is working right. Do not proceed
+                to the next step if your code is not showing the expected
+                result. Fix the problem before heading to the next step.
+
+                ■ Please seek help from your group whenever you have
+                issues. If your question is beyond your group’s capacity,
+                bring your question to your teachers when you meet in
+                groups.
+
+        ● Hint on how to organize your folders and files
+
+            ○ Create a folder called "Week-4" in “Phase-1” folder.
+
+            ○ Inside your "Week-4" folder, create a folder called “AppleProject”.
+
+            ○ Create two folders called “Resources” and “Project”, inside your
+            “AppleProject” folder.
+
+            ○ Download the following zipped file, and extract it inside the
+            “Resources” folder. The zipped file contains a replica of
+            Apple.com’s homepage.
+
+            ○ Inside the “Project” folder, create an html file called “index.html”.
+            This is where you write your html code.
+
+            ○ Inside your “Project” folder, create a folder called “CSS”. Inside of
+            your “CSS” folder, create a file called “style.css”.
+
+            ○ Inside of your “Project” folder, create a folder called “images”.
+
+            ○ Go to your “Resource” folder and copy all the images from the
+            “images” folder, and paste it in the “images” folder inside the
+            “Project” folder.
+
+            ○ Now start building Apple.com’s homepage.
