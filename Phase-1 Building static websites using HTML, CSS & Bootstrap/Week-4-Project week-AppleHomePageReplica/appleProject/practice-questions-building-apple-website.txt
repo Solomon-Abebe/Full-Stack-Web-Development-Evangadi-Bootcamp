@@ -47,3 +47,7 @@ Building Apple.com’s Homepage
             “Project” folder.
 
             ○ Now start building Apple.com’s homepage.
+The link of this website on github is the following: 
+
+https://solomon-abebe.github.io/Full-Stack-Web-Development-Evangadi-Bootcamp/Phase-1%20Building%20static%20websites%20using%20HTML,%20CSS%20&%20Bootstrap/Week-4-Project%20week-AppleHomePageReplica/appleProject/appleHome/sprint1/index.html
+
