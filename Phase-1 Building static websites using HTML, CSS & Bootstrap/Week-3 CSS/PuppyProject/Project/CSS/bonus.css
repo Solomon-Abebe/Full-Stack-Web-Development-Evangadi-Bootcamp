@@ -1,0 +1,50 @@
+h3 {
+  text-align: center;
+}
+.bigger-container {
+  width: 960px;
+  height: 500px;
+  margin: 25px auto;
+  background-color: #ffffff;
+  box-shadow: 10px 15px 15px #d6d6d6;
+  border: 2px solid #d6d6d6;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  width: 800px;
+  height: 400px;
+  background-color: #d6d6d6;
+  margin: 50px auto;
+}
+.rect {
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  /* This replaces diplay: flex */
+  display: grid;
+  place-items: center;
+  text-align: center;
+
+  width: 200px;
+  height: 200px;
+  margin: 100px auto;
+  border: 5px solid#FFFFFF;
+}
+.green {
+  background-color: #0d9616;
+}
+.lemon {
+  background-color: #ffff06;
+  width: 150px;
+  height: 170px;
+  margin: 15px 25px;
+  border: 3px solid #ffc4d4;
+}
+.yellow {
+  background-color: #e3b018;
+}
+.red {
+  background-color: #ae0f1d;
+}

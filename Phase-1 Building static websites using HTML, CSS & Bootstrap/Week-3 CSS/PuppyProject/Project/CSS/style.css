@@ -1,0 +1,135 @@
+* {
+  padding: 0;
+  margin: 0;
+  /* border-radius: 10px;
+  border: 1px dotted red; */
+}
+img {
+  max-width: 100%;
+}
+
+.myHeader {
+  background-color: rgb(50, 72, 93);
+  padding-top: 27px;
+  padding-bottom: 25px;
+  text-align: center;
+  color: white;
+  font-size: 40px;
+}
+.banner img {
+  margin: 0 0 83px;
+  padding: 0;
+  width: 100%;
+}
+.puppies-section {
+  display: flex;
+  justify-content: space-between;
+  width: 960px;
+  margin: 0 auto;
+}
+.puppy1 img,
+.missing-container,
+.puppy2 img {
+  width: 100%;
+}
+.missing-container {
+  background-color: rgb(233, 78, 94);
+  
+}
+
+.puppy1,
+.missing-container,
+.puppy2 {
+  width: 33%;
+}
+
+.missing-puppy {
+  font-size: 50px;
+  text-align: center;
+  padding: 60px;
+}
+.more-puppies {
+  font-size: 36px;
+  text-align: center;
+  margin: 68px auto;
+}
+.twoPuppies {
+  display: flex;
+  justify-content: space-between; /* Replaces the left and right margin of the missing puppy */
+  width: 960px;
+  margin: 0 auto;
+}
+/* .puppy3 {
+  margin-right: 37px;
+}
+.puppy4 {
+  margin-left: 37px;
+} */
+footer {
+  margin-top: 74px;
+  background-color: rgb(50, 72, 93);
+  color: white;
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 125px;
+  font-size: 37px;
+}
+
+
+
+
+
+/* .container {
+  width: 150px;
+  height: 150px;
+  border: solid 3px;
+  margin: 10px;
+  border-radius: 10px;
+  position: relative;
+}
+
+#container-1 {
+  z-index: auto;
+}
+
+#container-2 {
+  z-index: 1;
+}
+
+.child {
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  border-radius: 10px;
+  color: white;
+  padding: 5px;
+  text-align: right;
+}
+
+#first {
+  z-index: 1;
+  background-color: #FF5C35;
+  top: 10px;
+  left: 15px;
+}
+
+#second {
+  z-index: auto;
+  background-color: #192733;
+  top: 30px;
+  left: 35px;
+}
+
+#third {
+   z-index: 1;
+  background-color: #4FB06D;
+  top: 10px;
+  left: 5px;
+}
+
+#fourth {
+  z-index: auto;
+  background-color: #ED2D40;
+  top: 30px;
+  left: 25px;
+} */
