@@ -1,0 +1,249 @@
+/* General Styling*/
+body {
+  font-family: "Montserrat", sans-serif;
+}
+a {
+  color: #06c;
+}
+img {
+  max-width: 100%;
+}
+.white {
+  color: #fff;
+}
+.black {
+  color: #1d1d1f;
+}
+.grey {
+  color: #86868b;
+}
+
+/* Header Style */
+.nav-wrapper {
+  background: rgba(0, 0, 0, 0.8);
+  font-size: 0.75em;
+  font-weight: 200;
+}
+.nav-wrapper ul li a {
+  color: #fff;
+}
+.navbar-toggler {
+  color: #fff;
+}
+.nav-item {
+  text-align: left !important;
+  padding: 4px 0;
+  border-bottom: 1px solid #4b4b4b;
+}
+/* mac section  and common styles*/
+
+.links-wrapper ul li a:hover {
+  color: #000;
+}
+.links-wrapper-white ul li a:hover {
+  color: #fff;
+}
+.links-wrapper ul li a::after {
+  font-family: "FontAwesome";
+  font-weight: 900;
+  content: "\f105";
+  padding-left: 10px;
+}
+.mac-section {
+  background: #fafafa;
+}
+/* iPhone Pro section Styling -2nd Section */
+.iPhonePro-section {
+  background: url(../images/home/iphone11-pro-bg.jpg) no-repeat center/cover;
+  height: 580px;
+  color: #fff;
+  padding: 60px 20px;
+}
+
+.iPhonePro-price-wrapper {
+  font-size: 0.85em;
+  color: #86868b;
+}
+/* iPhone 11 section Styling -3rd Section*/
+.iPhone11-section {
+  background: url(../images/home/iphone11-bg.jpg) no-repeat center/cover;
+  height: 580px;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+
+.iPhone11-price-wrapper {
+  font-size: 0.85em;
+  color: #86868b;
+}
+
+/* Watch and card section styling -4h Section */
+.apple-watches-section {
+  background: #fff;
+ 
+}
+.left-side-wrapper,
+.right-side-wrapper {
+  height: 580px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  
+}
+.apple-watch-left {
+  background-image: url(../images/home/watch-series-5.jpg);
+}
+.apple-card-right{
+  background-image: url("../images/home/apple-card.jpg");
+}
+/* Tv and AirPod Section Styling -5th-Section */
+.apple-tv-left{
+  background-image: url("../images/home/apple-tv-background.jpg");
+ 
+}
+.airpod-right {
+  background-image: url("../images/home/air-pods.jpg");
+  background-size: initial;
+  background-position: bottom;
+  color: #fff;
+  background-color: #000;
+}
+.description-wraper {
+  max-width: 430px;
+}
+.tvshow-logo-wrapper {
+  padding: 180px 0;
+}
+
+.watch-more-wrapper a {
+   color: #06c;
+}
+
+.watch-more-wrapper a:after {
+  font-family: "FontAwesome";
+  font-weight: 900;
+  content: "\f144";
+  padding-left: 15px;
+}
+
+/* MacBook and iPad Section Styling -6th Section */
+
+.macbook-left {
+  background-image: url(../images/home/macbook-pro.jpg);
+  background-size: initial;
+  background-color: #fafafa;
+  background-position: bottom;
+}
+.new-ipad-right  {
+  background-image: url(../images/home/new-ipad.jpg);
+}
+
+/* Footer Styling */
+.footer-wrapper {
+  background-color: #f5f5f7;
+  color: #86868b;
+  font-size: 0.7em;
+  margin-top: 1%;
+}
+.footer-wrapper ul {
+  list-style: none;
+  padding-bottom: 10px;
+  padding-inline-start: 0px;
+}
+.footer-wrapper ul a {
+  color: #515154;
+}
+.my-apple-wrapper {
+  padding-bottom: 15px;
+  margin-top: 10px;
+}
+.copyright {
+  margin-top: 15px;
+}
+.footer-country {
+  margin-top: 8px;
+}
+.flag-wrapper {
+  display: inline-block;
+  vertical-align: middle;
+  padding-right: 5px;
+}
+.footer-country-name {
+  display: inline-block;
+  vertical-align: middle;
+}
+.footer-links-terms ul {
+  display: flex;
+}
+.footer-links-terms ul li a {
+  padding: 0 10px;
+  border-right: 1px solid #d2d2d7;
+}
+.footer-links-terms ul li:first-child {
+  padding-left: 0;
+}
+.footer-links-terms ul li:last-child {
+  border-right: 0;
+}
+
+.footer-links-wrapper h3 {
+  font-size: 12px;
+  font-weight: 600;
+  color: #1d1d1f;
+}
+.footer-wrapper ul li {
+  padding: 4px 0;
+}
+.upper-text-container {
+  border-bottom: 1px solid #d2d2d7;
+  padding: 17px 0 10px;
+  margin-bottom: 20px;
+}
+.upper-text-container a {
+  color: #515154;
+}
+
+/*Media Query*/
+/* Footer */
+@media (max-width: 768px) {
+  .footer-links-wrapper ul {
+    display: none;
+  }
+  .footer-links-wrapper h3 {
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+  }
+  .footer-links-wrapper h3:after {
+    font-family: "FontAwesome";
+    content: "\f067";
+    padding-left: 10px;
+    position: absolute;
+    right: 25px;
+  }
+}
+@media (min-width: 768px) {
+  /*Nav bar*/
+  .nav-item {
+    text-align: center !important;
+    padding: 0;
+    border-bottom: 0px;
+  }
+  /*Footer styling*/
+  .my-apple-wrapper {
+    border-bottom: 1px solid #d2d2d7;
+  }
+}
+@media (min-width: 992px) {
+  /*Footer styling*/
+  .copyright {
+    margin-top: 10px;
+  }
+  .footer-country {
+    margin-top: 10px;
+  }
+  .footer-links-terms {
+    margin-top: 10px;
+  }
+}
