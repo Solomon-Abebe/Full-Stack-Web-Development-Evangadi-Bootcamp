@@ -1,0 +1,64 @@
+The two-pointer pattern is a common algorithmic technique used to solve problems involving arrays or lists. It involves using two pointers (or indices) that traverse the data structure in some coordinated way. The pointers often start at different positions (e.g., one at the beginning and one at the end of the array) and move towards each other, though they can also move in the same direction or other patterns depending on the problem.
+
+### Key Scenarios for Using the Two-Pointer Pattern
+
+1. **Finding Pairs or Triplets**:
+   - **Example**: Given a sorted array, find two numbers that sum to a specific target.
+   - **Approach**: Start one pointer at the beginning (`left`) and the other at the end (`right`) of the array. Depending on the sum of the elements at these pointers, move the pointers closer to each other (increment `left` or decrement `right`).
+
+2. **Reversing an Array or Subarray**:
+   - **Example**: Reverse the elements of an array in place.
+   - **Approach**: Use two pointers, one at the start and one at the end of the array. Swap the elements at these pointers and then move the pointers towards each other until they meet in the middle.
+
+3. **Merging Two Sorted Arrays**:
+   - **Example**: Merge two sorted arrays into a single sorted array.
+   - **Approach**: Use two pointers, one for each array, and move through both arrays simultaneously, comparing elements and placing the smaller one into the result array.
+
+4. **Finding the Longest Substring without Repeating Characters**:
+   - **Example**: Given a string, find the length of the longest substring without repeating characters.
+   - **Approach**: Use two pointers (`left` and `right`) to define a sliding window. As you move `right` to expand the window, adjust `left` to maintain the condition of no repeating characters.
+
+### Advantages of the Two-Pointer Pattern
+- **Efficiency**: This pattern often leads to solutions with O(n) time complexity, where n is the length of the array or string, because each pointer typically traverses the array only once.
+- **Simplicity**: It can simplify complex problems by reducing the need for nested loops, making the algorithm easier to understand and implement.
+
+### Example: Finding Two Numbers that Sum to a Target in a Sorted Array
+
+```javascript
+function findTwoSum(arr, target) {
+    let left = 0;
+    let right = arr.length - 1;
+
+    while (left < right) {
+        let sum = arr[left] + arr[right];
+        if (sum === target) {
+            return [arr[left], arr[right]];
+        } else if (sum < target) {
+            left++;
+        } else {
+            right--;
+        }
+    }
+
+    return null;  // No such pair found
+}
+```
+
+### Example: Reversing an Array
+
+```javascript
+function reverseArray(arr) {
+    let left = 0;
+    let right = arr.length - 1;
+
+    while (left < right) {
+        [arr[left], arr[right]] = [arr[right], arr[left]];
+        left++;
+        right--;
+    }
+
+    return arr;
+}
+```
+
+In both examples, the two-pointer technique helps achieve the desired outcome efficiently and clearly.

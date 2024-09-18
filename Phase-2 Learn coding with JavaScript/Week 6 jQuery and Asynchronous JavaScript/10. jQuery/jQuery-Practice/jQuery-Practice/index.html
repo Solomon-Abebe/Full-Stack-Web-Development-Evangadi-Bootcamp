@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jQuery Practice</title>
+
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <h1>jQuery Practice</h1>
+
+    <h4>For Question 1:</h4>
+    <div id="sample1">
+      <p id="firstP">
+        This is a sample content. Lorem ipsum dolor sit amet, consectetur
+        adipiscing elit. Morbi lectus justo, suscipit ac justo at, pretium
+        eleifend leo. Praesent ipsum ante, elementum finibus gravida eu, tempor
+        vitae mi. Sed molestie mauris nec eros finibus auctor. Integer non massa
+        metus. Duis in tortor nec magna pellentesque dictum. Nunc tristique in
+        sem ac hendrerit. Duis semper turpis fringilla urna rutrum vulputate.
+      </p>
+
+      <p id="secondP">
+        Aliquam lobortis fermentum arcu ut dignissim. Vestibulum quis lorem
+        risus. Quisque cursus, lorem vitae sagittis posuere, sem turpis rhoncus
+        magna, a consectetur est nisl ac quam. Cras faucibus venenatis orci
+        ultrices elementum. Nulla facilisi. Praesent libero tellus, egestas vel
+        mauris at, aliquet ullamcorper odio. Aliquam auctor laoreet enim vel
+        dictum. Fusce a neque condimentum, suscipit dolor vel, placerat arcu.
+        Nunc vel sapien eleifend, dignissim ex nec, interdum velit. Duis elit
+        lorem, malesuada et sodales ut, sodales quis mi.
+      </p>
+    </div>
+
+    <hr />
+
+    <h4>For Question 2:</h4>
+    <h5>List of top Tech companies</h5>
+    <div>
+      <ul id="techCompanies">
+        <li class="red">Apple</li>
+        <li class="blue">Samsung</li>
+        <li class="blue">Foxconn</li>
+        <li class="red">Alphabet</li>
+        <li class="blue">Microsoft</li>
+        <li class="red">Huawei</li>
+        <li class="blue">Dell</li>
+        <li class="red">Hitachi</li>
+        <li class="blue">IBM</li>
+        <li class="blue">Sony</li>
+      </ul>
+
+      <div id="blueCompanies">
+        <p>
+          How many of the companies above are colored blue? Display the result
+          below.
+        </p>
+      </div>
+    </div>
+
+    <hr />
+    <h4>For Question 3:</h4>
+    <h5>The Sum and Average of two numbers</h5>
+    <form id="adder" action="#" method="POST">
+      <div class="form-values">
+        <p>
+          First value<br />
+          <input type="text" name="first-value" placeholder="First value" />
+        </p>
+        <p>
+          Second value<br />
+          <input type="text" name="second-value" placeholder="Second value" />
+        </p>
+      </div>
+      <br />
+      <button id="submitButton" type="submit">Sum and Average</button>
+    </form>
+    <br />
+    <div id="sum">Result will be displayed here</div>
+    <br />
+
+    <!-- Added html -->
+    <h4>For Question 4:</h4>
+
+    <h3>User Information</h3>
+    <div id="form-container">
+      <form id="user-form">
+        <p id="errorMessage"></p>
+        <label for="first-name">First Name:</label>
+        <input type="text" id="first-name" name="first-name" required />
+        <br />
+        <br />
+        <label for="last-name">Last Name:</label>
+        <input type="text" id="last-name" name="last-name" required />
+        <br />
+        <br />
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required />
+        <br />
+        <br />
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+    <div id="result-container" style="display: none">
+      <h2>User Information</h2>
+      <p>First Name: <span id="first-name-result"></span></p>
+      <p>Last Name: <span id="last-name-result"></span></p>
+      <p>Email: <span id="email-result"></span></p>
+    </div>
+
+    <script src="../jQuery-Practice/js/jquery-3.7.1.js"></script>
+    <script src="../jQuery-Practice/js/script.js"></script>
+  </body>
+</html>

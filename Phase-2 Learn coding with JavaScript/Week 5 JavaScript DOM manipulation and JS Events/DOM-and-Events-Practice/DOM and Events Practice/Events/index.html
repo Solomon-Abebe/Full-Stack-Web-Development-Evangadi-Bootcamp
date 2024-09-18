@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JS Events</title>
+    <link rel="stylesheet" type="text/css" href="styles/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>JavaScript Event Examples</h1>
+
+      <h3>HTML Event handlers</h3>
+
+      <button type="button" onclick="changeBackground()">
+        Change background on click
+      </button>
+
+      <button
+        type="button"
+        onmouseover="changeBackground()"
+        onmouseout="removeBackground()"
+      >
+        Toggle background
+      </button>
+
+      <!-- What happens if I apply the onclick property on the <p> tag? -->
+      <p onclick="changeBackground()">Change the background of the body</p>
+
+      <h3>Traditional DOM Event handlers</h3>
+
+      <p>Change the background of the body</p>
+
+      <p>
+        <button type="button" class="dom-change-bg" id="change-bg1">
+          Change background
+        </button>
+      </p>
+
+      <p id="removeBgh3">Paragraph to remove bg</p>
+
+      <!-- What do you do if you want to attach the changeBackground function with the <p> tag -->
+
+      <h3>Event Listener</h3>
+
+      <p>
+        <button type="button" class="eventListener" id="change-bg-listener">
+          Change background (Event Listener)
+        </button>
+      </p>
+
+      <h3>Night Mode</h3>
+      <p>
+        <button type="button" id="nightmode">
+          Change the site to night mode
+        </button>
+      </p>
+
+      <div class="form-demo">
+        <h2>Form validation</h2>
+
+        <h4>Registration form</h4>
+
+        <div class="form-wrapper">
+          <div id="errorsDisplay"></div>
+          <form id="registration-form" action="#" method="POST">
+            <p>First name</p>
+            <input type="text" name="first-name" placeholder="* First name" />
+            <p>Last name</p>
+            <input type="text" name="last-name" placeholder="Last name" />
+            <p>Password</p>
+            <input type="password" name="password" placeholder="* Password" />
+            <button id="submitButton" type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="scripts/scripts.js"></script>
+  </body>
+</html>

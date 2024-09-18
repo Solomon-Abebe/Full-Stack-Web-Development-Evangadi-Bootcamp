@@ -1,0 +1,137 @@
+1. Meaning of what JavaScript (JS) is and purpose of learning JS
+   Definition:
+        - is a logic-based programming language
+        that can be used to modify website content and make it interactive response to a user's actions
+        - JavaScript, as its name implies is a scripting language, meaning, it is used to instruct/ communicate with the browser. 
+
+   Purpose: 
+        - to add some interactivity on the webpage (You use JavaScript)
+        - To get the data from the database, we would need to use a programing language such as JS(Node.JS), Java, etc.
+        - If we host your webpage somewhere on a remote server, we will need a web server (like Apache or Node) to send the page to the user. If you use Node.js, we need JavaScript. 
+        -  to make our webpage faster and robust, we will need to use JavaScript frameworks like React or Angular
+     
+    ////// JavaScript => Machine language (machine code) => Binary (or base 2)/////
+   Machine Code: 
+        Machine code is the lowest level of code that is directly executed by the computer's CPU. It consists of binary instructions that the computer's hardware understands. Each instruction performs a very specific task, such as loading data from memory, performing arithmetic operations, or controlling program flow.
+
+    
+   -Assembly language:
+
+       Assembly language is a low-level programming language that is one step above machine code. It uses symbolic names to represent the binary instructions of machine code, making it slightly more readable for humans. Each assembly language instruction corresponds directly to a machine code instruction.
+       
+       Example:
+       assembly code to load letter A
+       MOV AL, 41h
+
+  Compiler:
+        A compiler is a software tool that translates code written in a high-level programming language (such as C, C++, or Java) into machine code or an intermediate code. The purpose of a compiler is to convert the human-readable source code into a form that can be executed by the computer.
+
+  Programming Language:
+        A programming language is a formal language comprising a set of instructions that produce various kinds of output. Programming languages are used to implement algorithms and manage data structures. High-level programming languages, such as Python, Java, and C++, provide a more abstract layer of code that is easier for humans to read and write compared to machine code or assembly language.
+
+        console.log("Hello, world!")
+    
+  Relationship and Workflow
+        ******************************
+        Programming Language => Compiler => (Assembly Language) => Machine Code
+        ******************************
+
+
+        Programming Language: 
+            Developers write source code in a high-level programming language.
+
+        Compiler: 
+            The compiler translates the high-level source code into machine code or an intermediate form.
+
+        Assembly Language: 
+            Sometimes, the compiler translates the high-level code into assembly language first, which is then assembled into machine code.
+
+        Machine Code: 
+            The machine code is executed by the computer's CPU.
+
+        This process allows humans to write complex software using more abstract, readable, and manageable code, which is then converted into the simple, fast instructions that a computer can execute directly in CPU.
+
+2. What is meant by interactive webpages
+    A web site is interactive, when it can communicate with the user in a meaningful way. Interactivity facilitates the user to be actively engaged with the site. This is the main thing you need to understand as a front-end JavaScript developer.
+
+
+
+3. Syntax and semantics
+   Syntax
+        Syntax refers to the rules that define the structure of a language. It is concerned with the form, that is, how the symbols of the language are arranged to create valid code. If the syntax is incorrect, the code will not run. In JavaScript, syntax rules include things like:
+
+            Keywords: Reserved words that have special meaning in the language, such as if, else, function, return, var, let, const, etc.
+            
+            Operators: Symbols that perform operations on variables and values, such as +, -, *, /, ==, ===, &&, ||, etc.
+            
+            Punctuation: Characters that organize the code structure, such as {}, [], (), ;, ,, etc.
+            
+            Literals: Fixed values like numbers (123), strings ("hello"), booleans (true, false), etc.
+
+            Examples of JavaScript Syntax:
+            
+            1. Variable Declaration:
+
+            let name = "John";
+            const age = 30;
+            var isStudent = false;
+
+            2.  Function Declaration:
+
+                function greet() {
+                console.log("Hello, world!");
+                }
+            3. Conditional Statement:
+               if (age > 18) {
+                console.log("Adult");
+                } else {
+                    console.log("Minor");
+                    }
+    Semantics:
+        Semantics refers to the meaning of the code. It is concerned with what the code does and what the instructions mean. While syntax is about the form, semantics is about the function. Semantically correct code adheres to the logic and intended behavior as specified by the programmer.
+
+        Examples of JavaScript Semantics:
+
+        1. Variable Scope:
+
+        function example() {
+        var localVariable = "I am local";
+         
+         console.log(localVariable); // Correct - localVariable is in scope
+        }
+        
+        console.log(localVariable); // Error - localVariable is not defined outside the function
+
+        2. Type Coercion:
+            console.log("5" + 5); // "55" - JavaScript coerces number to string and concatenates
+            
+            console.log("5" - 5); // 0 - JavaScript coerces string to number and subtracts
+
+        3. Function Behavior:
+
+             function add(a, b) {
+                 return a + b;
+            }
+            console.log(add(5, 3)); // 8 - The function correctly adds two numbers
+            console.log(add("5", 3)); // "53" - The function concatenates because one argument is a string
+
+
+4. Using the console and debugging
+
+5.  Variables (declaring, assigning value, changing value, rules of naming
+    variables)
+
+6. Data structures: meaning and types of data structures in JS (number, string,
+   boolean, undefined, null, array)
+
+    ◆ Operators: use and types (arithmetic, assignment, string and logical
+        operators)
+    ◆ Array (definition, declaration, adding values to an array and accessing
+        array values with index)
+
+
+
+7. Weak typing in JS
+
+
+

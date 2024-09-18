@@ -1,0 +1,153 @@
+<!-- <h2>User Information</h2>
+    <div class="error" id="error-message">Please fill in all required fields.</div>
+    
+    <form id="user-form">
+        <label for="first-name">First Name (*):</label>
+        <input type="text" id="first-name" name="first-name" required><br><br>
+        
+        <label for="last-name">Last Name (*):</label>
+        <input type="text" id="last-name" name="last-name" required><br><br>
+        
+        <label for="email">Email (*):</label>
+        <input type="email" id="email" name="email" required><br><br>
+        
+        <button type="submit">Submit</button>
+    </form>
+
+    <div id="user-data" class="hidden">
+        <h3>Provided Information</h3>
+        <p><strong>First Name:</strong> <span id="display-first-name"></span></p>
+        <p><strong>Last Name:</strong> <span id="display-last-name"></span></p>
+        <p><strong>Email:</strong> <span id="display-email"></span></p>
+    </div> -->
+
+    <!-- **************************************************** -->
+
+    <!-- <h1>User Information</h1>
+    <div id="form-container">
+        <form id="user-form">
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" name="first-name" required autocomplete="off"><br><br>
+
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" name="last-name" required autocomplete="off"><br><br>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required autocomplete="off"><br><br>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <div id="result-container" style="display: none;">
+        <h2>User Information</h2>
+        <p>First Name: <span id="first-name-result"></span></p>
+        <p>Last Name: <span id="last-name-result"></span></p>
+        <p>Email: <span id="email-result"></span></p>
+    </div> -->
+/*************************************************************************************************************
+//*********************************************************************************************************
+    <!-- <h4>Form Validation and Display</h4>
+    <form id="userForm" action="#" method="POST">
+      <div id="formInputs">
+        <p>
+          First Name: <br />
+          <input type="text" id="firstName" name="firstName" required />
+        </p>
+        <p>
+          Last Name: <br />
+          <input type="text" id="lastName" name="lastName" required />
+        </p>
+        <p>
+          Email: <br />
+          <input type="email" id="email" name="email" required />
+        </p>
+         
+      </div>
+      <p id="errorMessage"></p>
+      <button type="submit">Submit</button>
+    </form>
+    <div id="result"></div> -->
+
+
+
+
+    // jQuery
+
+
+    // Vanilla Js for Question 4
+/* document.getElementById("user-form").addEventListener("submit", function(e) {
+    e.preventDefault(); // Prevent form from submitting normally
+
+    // Get form values
+    const firstName = document.getElementById("first-name").value.trim();
+    const lastName = document.getElementById("last-name").value.trim();
+    const email = document.getElementById("email").value.trim();
+
+    // Error message div
+    const errorMessage = document.getElementById("error-message");
+
+    // Check if all fields are provided
+    if (!firstName || !lastName || !email) {
+        errorMessage.style.display = "block"; // Show error message
+    } else {
+        errorMessage.style.display = "none"; // Hide error message
+        
+        // Hide the form
+        document.getElementById("user-form").classList.add("hidden");
+
+        // Display user data
+        document.getElementById("display-first-name").textContent = firstName;
+        document.getElementById("display-last-name").textContent = lastName;
+        document.getElementById("display-email").textContent = email;
+
+        // Show the user data
+        document.getElementById("user-data").classList.remove("hidden");
+    }
+});
+ */
+// $(document).ready(function () {
+//   $("#user-form").submit(function (e) {
+//     e.preventDefault();
+
+//     var firstName = $("#first-name").val();
+//     var lastName = $("#last-name").val();
+//     var email = $("#email").val();
+
+//     if (firstName && lastName && email) {
+//       $("#result-container").show();
+//       $("#first-name-result").text(firstName);
+//       $("#last-name-result").text(lastName);
+//       $("#email-result").text(email);
+//       $(this).hide();
+//       $("#error-container").remove();
+//     } else {
+//       if (!$("#error-container").length) {
+//         $("#form-container").before(
+//           '<div id="error-container" class="error">Please fill in all required fields.</div>'
+//         );
+//       }
+//     }
+//   });
+// });
+
+/* $(document).ready(function () {
+  $("#userForm").submit(function (e) {
+    e.preventDefault();
+
+    const firstName = $("#firstName").val();
+    const lastName = $("#lastName").val();
+    const email = $("#email").val();
+
+    if (firstName && lastName && email) {
+      $("#errorMessage").text(""); // Clear any previous error message
+      $("#result").html(`
+                <b>First Name:</b> ${firstName}<br>
+                <b>Last Name:</b> ${lastName}<br>
+                <b>Email:</b> ${email}
+            `);
+    } else {
+      $("#errorMessage").text("Please fill in all required fields.");
+    }
+  });
+});
+ */
