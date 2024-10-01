@@ -1,0 +1,28 @@
+Hello Bash
+/*
+
+mkdir BashPractice
+
+3
+mkdir BashPractice/BashTest
+
+4
+touch BashPractice/myTextFile.txt
+
+5
+echo "Hello bash" > BashPractice/myTextFile.txt
+
+cat myTextFile.txt 
+
+6
+
+
+mv BashPractice/myTextFile.txt BashPractice/myTextPractice.txt
+
+7
+
+chmod 776 BashPractice/myTextPractice.txt
+
+8
+rm -r BashPractice/BashTest
+*/
