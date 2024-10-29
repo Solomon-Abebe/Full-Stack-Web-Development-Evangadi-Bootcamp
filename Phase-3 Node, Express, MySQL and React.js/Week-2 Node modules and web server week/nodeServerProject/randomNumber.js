@@ -4,5 +4,4 @@ function random(min, max) {
 
 const randNum = random(10, 100);
 console.log(randNum);
-
 module.exports = { random };

@@ -1,0 +1,58 @@
+What is OOP(Object Oriented Programming)?
+****************************************
+    Object-Oriented Programming (OOP) is a programming paradigm based on the concept of "objects," which can contain data and code that manipulates that data. OOP aims to model real-world entities and relationships more naturally within software. There are four core principles of OOP, often referred to as Encapsulation, Abstraction, Inheritance, and Polymorphism.
+
+
+The Four Core Principles of OOP
+*******************************
+    1. Encapsulation
+       ************* 
+          Encapsulation is the bundling of data (attributes) and methods (functions) that operate on that data within a single unit, known as an object. It restricts direct access to some of the object’s components, which is a way of hiding the internal state and protecting the object’s integrity. Only methods inside the object can modify its data.
+
+          Example:
+            In a class Car, the data like speed and fuel would be private, while methods like accelerate() or brake() are public. This hides the internal state of the car, and you interact with it via public methods.
+
+          Benefits:
+            
+            -Controlled access to data through methods.
+            -Increased security by preventing unintended or unauthorized modifications.
+            -Encourages modularity, where each object has a clear responsibility.
+    2. Abstraction
+       ***********
+          Abstraction refers to the concept of exposing only the essential features of an object, while hiding the unnecessary details. It allows developers to focus on what an object does, rather than how it does it. By working at a higher level of abstraction, complexity is reduced.
+
+          Example:
+           -A Smartphone class might have a method makeCall(), without exposing details of how the call is connected internally via cellular towers and network protocols.
+
+          Benefits:
+            -Simplifies complexity by showing only relevant details.
+            -Encourages cleaner and more maintainable code.    
+    3. Inheritance
+       *************
+          Inheritance allows one class to inherit the properties and behavior (methods) of another class. The class that inherits is called the subclass or derived class, while the class being inherited from is the superclass or base class. Inheritance promotes code reusability and a natural hierarchical relationship between classes.
+
+          Example: 
+            - A class Animal could have general methods like move() and eat(). A Dog class can inherit from  Animal and have its own specific method, like bark(), in addition to move() and eat().
+
+          Benefits:
+            - Code reuse, as shared functionality is written once in a base class.
+            - Hierarchical organization, which models real-world relationships.
+            - Extensibility, allowing new functionality to be added with minimal changes.            
+    4. Polymorphism
+       *************
+           Polymorphism allows objects of different classes to be treated as objects of a common superclass. It enables the same method to perform different tasks, depending on the object that invokes it. Polymorphism can be achieved through method overriding (runtime polymorphism) and method overloading (compile-time polymorphism).
+
+           Example: 
+              - A base class Shape may have a method draw(). Subclasses like Circle, Rectangle, and Triangle can each implement their version of draw(), and when the method is called on a Shape object, the correct method for the object’s actual type will be invoked.
+
+            Benefits:
+               - Flexibility and scalability, allowing for dynamic method behavior.
+               - Simplifies code by handling different types of objects through a common interface.           
+
+Summary of OOP Principles:
+**************************
+    - Encapsulation: Restricts access to certain components to safeguard the object.
+    - Abstraction: Simplifies complex systems by exposing only relevant parts.
+    - Inheritance: Allows a new class to derive functionality from an existing class.
+    - Polymorphism: Enables a single interface to handle different data types or classes.
+           Together, these principles enable the creation of flexible, reusable, and maintainable code in OOP-based languages like Java, Python, C++, and others.               

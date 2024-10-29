@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,700;1,100;1,200&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #deeff2;
+  font-family: 'Poppins', sans-serif;
+}
+
+.all-container {
+  width: 95%;
+  margin: 0 auto;
+}
+
+/* header start  */
+.title > h1 {
+  margin-top: 50px;
+  text-align: center;
+  font-size: 30px;
+  color: #d47d03;
+}
+
+.title > div {
+  height: 3px;
+  width: 70px;
+  margin: 15px auto 20px;
+  background-color: #ff9500;
+}
+/* header end  */
+
+/* food start */
+.foods-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  justify-items: center;
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+.single-food {
+  width: 100%;
+  max-width: 370px;
+  margin: 18px auto;
+  background-color: white;
+  border-radius: 5px;
+  overflow: hidden;
+  transition: all 0.5s;
+  height: 500px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.single-food:hover {
+  transform: scale(1.007);
+  cursor: pointer;
+}
+
+.single-food img {
+  width: 100%;
+  height: auto;
+}
+
+.title-price {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 0 20px;
+}
+
+.title-price > h3 {
+  font-size: 16px;
+}
+
+.title-price > p {
+  background-color: #ff9500;
+  padding: 3px 7px;
+  color: white;
+  border-radius: 5px;
+  transition: all 0.5s;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.food-desc {
+  padding: 0 20px;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+/* Responsive design */
+@media (max-width: 1200px) {
+  .foods-container {
+    max-width: 960px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .foods-container {
+    max-width: 440px;
+    grid-template-columns: 1fr;
+  }
+
+  .single-food {
+    max-width: 100%;
+    height: auto;
+    padding-bottom: 36px;
+  }
+}
+/* food end */

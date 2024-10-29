@@ -1,7 +1,7 @@
 const http = require("http");
 const randomNum =require("./randomNumber");
 
-const mimeTyeps = require("mime-types").lookup;
+// const mimeTyeps = require("mime-types").lookup;
 
 const myServer = http.createServer((req, res) => {
   res.writeHead(200, { "Content-Type": "text/plain" });

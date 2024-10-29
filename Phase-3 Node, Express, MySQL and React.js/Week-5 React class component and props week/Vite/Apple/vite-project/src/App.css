@@ -1,0 +1,15 @@
+body{
+    background-color: #282c34;
+    text-align: center;
+}
+.wrapper{
+    border:#61dafb 2px double;
+    width:75%;
+    margin:28px auto 20px auto;
+    padding: 20px
+
+}
+h1{
+    color: white;
+    text-decoration: underline;
+}

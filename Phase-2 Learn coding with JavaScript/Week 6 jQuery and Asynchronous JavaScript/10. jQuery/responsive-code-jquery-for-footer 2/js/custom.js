@@ -1,5 +1,7 @@
    // Why it is not working without refreshing?
 
+   
+
 $(document).ready(function () {
   $(".footer-links-wrapper h3").on("click", function() {
     $(this).next("ul").slideToggle(500);

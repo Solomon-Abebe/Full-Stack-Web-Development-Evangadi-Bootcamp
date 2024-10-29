@@ -1,0 +1,22 @@
+.container{
+    width: 80%;
+    border: 2px solid black;
+    border-radius: 15px;
+    margin: 10px auto;
+    padding: 5px;
+    font-size: 24px;
+    font-weight: bold;
+}
+h3{
+    text-align: center;
+    text-decoration: underline;
+}
+.firstColor{
+    background-color: #ef8a3c;
+}
+.secondColor{
+    background-color: #d2c345;
+}
+.thirdColor{
+    background-color: #5cc1ed;
+}
