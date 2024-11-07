@@ -241,7 +241,7 @@ app.post("/add-product", (req, res) => {
 
 /*********************** GET PRODUCTS (GET REQUEST) ***********************/
 
-app.get("/get-products", (req, res) => {
+app.get("/iphones", (req, res) => {
   const query = `
     SELECT Products.product_name, Products.product_url, 
            ProductDescription.product_brief_description, ProductDescription.product_description, 

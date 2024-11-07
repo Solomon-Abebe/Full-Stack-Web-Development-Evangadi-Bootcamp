@@ -1,0 +1,34 @@
+{
+  "products": [
+    {
+      "product_url": "iphonese",
+      "product_img": "https://www.apple.com/v/iphone-se/l/images/overview/hero/hero_iphone_se_static__hs9s6m6gfmq2_large.jpg",
+      "product_link": "https://www.apple.com/shop/buy-iphone/iphone-11",
+      "product_name": "iPhone SE",
+      "product_brief_description": "Lots to love. Less to spend.",
+      "starting_price": "$399",
+      "price_range": "From $9.54/mo. or $229 with trade-in.*",
+      "product_description": "iPhone SE packs our most powerful chip into our most popular size at our most affordable price. It’s just what you’ve been waiting for."
+    },
+    {
+      "product_url": "iphone11",
+      "product_img": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-14-model-unselect-gallery-1-202209?wid=5120&hei=2880&fmt=p-jpg&qlt=80&.v=NjB6M3BqTGRudDZtakJrUG5tT2pHTGdzSmpObkZCM3MrNmJ5SkhESlNDaEtZdVY3TDNHWkJvd3VlMlcxbzlseEpFd0xhWDVibStLdGRYRmxkNGI4VTJmalN5dlRpR2R3QUc1RGJwYllnWmlieDdHTDNUaGNQQVdmWXJrY0lXclc&traceId=1",
+      "product_link": "https://www.apple.com/shop/buy-iphone/iphone-11",
+      "product_name": "iPhone 11",
+      "product_brief_description": "Lots to love. Less to spend.",
+      "starting_price": "$449",
+      "price_range": "From $18.70/mo. or $449 with trade-in.*",
+      "product_description": "You can either pay for your new iPhone in full or pay monthly with carrier financing, iPhone Payments, the iPhone Upgrade Program, and now Apple Card Monthly Installments. Your carrier service plan will be charged separately. Just choose the option that works for you."
+    },
+    {
+      "product_url": "iphone11pro",
+      "product_img": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-15-model-unselect-gallery-1-202309?wid=5120&hei=2880&fmt=webp&qlt=70&.v=aVFiZEF4WDEvUWJNSU5HRDg4cklnTGdzSmpObkZCM3MrNmJ5SkhESlNDZ1UwRE05YU1MZ0lYWk55ZU5FOENXWkpFd0xhWDVibStLdGRYRmxkNGI4VTdpMGJRT0ppMjh4RlRZQkc0Q3FZZEI4UW55RWdXT3BFc2NrR2VEb1pCOGo&traceId=1",
+      "product_link": "https://www.apple.com/shop/buy-iphone/iphone-11-pro",
+      "product_name": "iPhone 11 Pro",
+      "product_brief_description": "Pro cameras. Pro display. Pro performance.",
+      "starting_price": "$679",
+      "price_range": "From $28.29/mo. or $679 with trade-in.*",
+      "product_description": "A transformative triple‑camera system that adds tons of capability without complexity. An unprecedented leap in battery life. And a mind‑blowing chip that doubles down on machine learning and pushes the boundaries of what a smartphone can do. Welcome to the first iPhone powerful enough to be called Pro."
+    }
+  ]
+}

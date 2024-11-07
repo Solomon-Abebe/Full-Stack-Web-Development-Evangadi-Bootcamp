@@ -4,6 +4,7 @@ import appletv from "../../commonResources/images/icons/apple-tv-logo.png"
 import banker from "../../commonResources/images/home/banker.png"
 import watchseries5 from "../../commonResources/images/icons/watch-series5-logo.png"
 import arcade from "../../commonResources/images/icons/arcade.png"
+import Youtube from './Youtube/Youtube'
 
 function Sections() {
   return (
@@ -145,88 +146,107 @@ function Sections() {
       </section>
 
       <section className="fifth-heghlight-wrapper">
-		<div className="container-fluid">
-			<div className="row">
-				<div className="left-side-wrapper col-sm-12 col-md-6">
-					<div className="left-side-container">
-						<div className="top-logo-wrapper">
-							<div className="logo-wrapper">
-								<img src={appletv} alt='apple-tv'/>
-							</div>
-						</div>
+        <div className="container-fluid">
+          <div className="row">
+            <div className="left-side-wrapper col-sm-12 col-md-6">
+              <div className="left-side-container">
+                <div className="top-logo-wrapper">
+                  <div className="logo-wrapper">
+                    <img src={appletv} alt="apple-tv" />
+                  </div>
+                </div>
 
-						<div className="tvshow-logo-wraper">
-							<img src={banker} alt='banker'/>
-						</div>
+                <div className="tvshow-logo-wraper">
+                  <img src={banker} alt="banker" />
+                </div>
 
-						<div className="watch-more-wrapper">
-							<a href="#">Watch now on the Apple TV App</a>
-						</div>
-					</div>
-				</div>
-				<div className="right-side-wrapper col-sm-12 col-md-6">
-					<div className="right-side-container">
-						<div className="top-logo-wrapper">
-							<div className="logo-wrapper">
-								<img src={watchseries5} alt='watch-series5'/>
-							</div>
-						</div>
-						<div className="description-wraper">
-							With the Always-On Retina display.<br/>
-							You’ve never seen a watch like this.
-						</div>
-						<div className="links-wrapper">
-							<ul>
-								<li><a href="#">Learn more</a></li>
-								<li><a href="#">Buy</a></li>
-							</ul> 
-						</div>
-					</div>
-				</div>					
-			</div>
-		</div> 
-	</section>
+                <div className="watch-more-wrapper">
+                  <a href="#">Watch now on the Apple TV App</a>
+                </div>
+              </div>
+            </div>
+            <div className="right-side-wrapper col-sm-12 col-md-6">
+              <div className="right-side-container">
+                <div className="top-logo-wrapper">
+                  <div className="logo-wrapper">
+                    <img src={watchseries5} alt="watch-series5" />
+                  </div>
+                </div>
+                <div className="description-wraper">
+                  With the Always-On Retina display.
+                  <br />
+                  You’ve never seen a watch like this.
+                </div>
+                <div className="links-wrapper">
+                  <ul>
+                    <li>
+                      <a href="#">Learn more</a>
+                    </li>
+                    <li>
+                      <a href="#">Buy</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-    <section className="sixth-heghlight-wrapper">
-		<div className="container-fluid">
-			<div className="row">
-				<div className="left-side-wrapper col-sm-12 col-md-6">
-					<div className="left-side-container">
-						<div className="top-logo-wrapper">
-							<div className="logo-wrapper">
-								<img src={arcade} alt='arcade'/>
-							</div>
-						</div>
-						<div className="description-wraper white">
-							Agent 8 is a small hero on a big mission.
-						</div>
-						<div className="links-wrapper">
-							<ul>
-								<li><a href="#">Play now<sup>2</sup></a></li>
-								<li><a href="#">Learn about Apple Arcade</a></li>
-							</ul> 
-						</div>						
-					</div>
-				</div>
-				<div className="right-side-wrapper col-sm-12 col-md-6">
-					<div className="right-side-container">
-						<div className="title-wraper">
-							Apple Card Monthly Installments 
-						</div> 
-						<div className="description-wraper">
-							Pay for your next iPhone over time, interest-free with Apple Card.
-						</div>
-						<div className="links-wrapper">
-							<ul>
-								<li><a href="#">Learn more</a></li>
-								<li><a href="#">Apply now</a></li>
-							</ul> 
-						</div>
-					</div>
-				</div>					
-			</div>
-		</div> 
-	</section>
+      <section className="sixth-heghlight-wrapper">
+        <div className="container-fluid">
+          <div className="row">
+            <div className="left-side-wrapper col-sm-12 col-md-6">
+              <div className="left-side-container">
+                <div className="top-logo-wrapper">
+                  <div className="logo-wrapper">
+                    <img src={arcade} alt="arcade" />
+                  </div>
+                </div>
+                <div className="description-wraper white">
+                  Agent 8 is a small hero on a big mission.
+                </div>
+                <div className="links-wrapper">
+                  <ul>
+                    <li>
+                      <a href="#">
+                        Play now<sup>2</sup>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">Learn about Apple Arcade</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div className="right-side-wrapper col-sm-12 col-md-6">
+              <div className="right-side-container">
+                <div className="title-wraper">
+                  Apple Card Monthly Installments
+                </div>
+                <div className="description-wraper">
+                  Pay for your next iPhone over time, interest-free with Apple
+                  Card.
+                </div>
+                <div className="links-wrapper">
+                  <ul>
+                    <li>
+                      <a href="#">Learn more</a>
+                    </li>
+                    <li>
+                      <a href="#">Apply now</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="youtubeVideosWrapper top-100">
+        <Youtube/>
+      </section>
     </div>
   );
 }
