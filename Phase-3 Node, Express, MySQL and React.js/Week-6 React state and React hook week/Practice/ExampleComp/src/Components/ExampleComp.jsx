@@ -103,11 +103,11 @@ class ExampleComp extends Component {
     constructor() { 
         super();
         this.state = {
-            valueOne: "Hi Abebe",
+            valueOne: "Hi Bob",
         };
     }
     updateValue = () => {
-        this.setState({valueOne: "Hello Abebe"})
+        this.setState({valueOne: "Hello James"})
     }
     render () {
         return (
