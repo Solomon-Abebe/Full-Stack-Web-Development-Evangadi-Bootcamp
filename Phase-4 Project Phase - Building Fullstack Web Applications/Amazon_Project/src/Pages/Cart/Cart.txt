@@ -1,0 +1,180 @@
+// import React, { useContext } from 'react'
+// import LayOut from "../../Components/LayOut/LayOut";
+// import classes from "./Cart.module.css";
+// import { DataContext } from '../../Components/DataProvider/DataProvider';
+// import ProductCard from '../../Components/Category/Product/ProductCard';
+
+// function Cart() {
+//     const[{basket, user}, dispatch]=useContext(DataContext);
+
+//   return (
+//     <LayOut>
+//       <section>
+//         <div>
+//           <h2>Hello</h2>
+//           <h3>Your shopping Cart</h3>
+//           <hr />
+//           {basket?.length == 0 ? (
+//             <p>No item in your cart</p>
+//           ) : (
+//             basket?.map((item, i) => {
+//               return (
+//                 <ProductCard
+//                   key={i}
+//                   product={item}
+//                   renderDesc={true}
+//                   flex={true}
+//                 />
+//               );
+//             })
+//           )}
+//         </div>
+//       </section>
+//     </LayOut>
+//   );
+// }
+
+// export default Cart
+
+// import React, { useContext, useState } from "react";
+// import LayOut from "../../Components/LayOut/LayOut";
+// import classes from "./Cart.module.css";
+// import { DataContext } from "../../Components/DataProvider/DataProvider";
+// import { Type } from "../../Utility/action.type";
+
+// function Cart() {
+//   const [{ basket, user }, dispatch] = useContext(DataContext);
+
+//   // Local state to track quantities for display purposes
+//   const [localQuantities, setLocalQuantities] = useState(
+//     basket.reduce((acc, item) => {
+//       acc[item.id] = item.quantity || 1; // Default quantity to 1 if not defined
+//       return acc;
+//     }, {})
+//   );
+
+//   // Handle quantity input (no action, just update local state)
+//   const handleQuantityChange = (id, value) => {
+//     setLocalQuantities({
+//       ...localQuantities,
+//       [id]: value > 0 ? value : 1, // Ensure quantity is at least 1
+//     });
+//   };
+
+//   // Handle remove button
+//   const handleRemove = (id) => {
+//     dispatch({
+//       type: Type.REMOVE_FROM_BASKET,
+//       id,
+//     });
+//   };
+
+//   // Calculate total price (based on basket's quantities)
+//   const calculateTotal = () =>
+//     basket?.reduce(
+//       (sum, item) => sum + item.price * (localQuantities[item.id] || 1),
+//       0
+//     );
+
+//   return (
+//     <LayOut>
+//       <section>
+//         <div>
+//           <h2>Hello {user ? user.name : "Guest"}</h2>
+//           <h3>Your Shopping Cart</h3>
+//           <hr />
+//           {basket?.length === 0 ? (
+//             <p>No items in your cart</p>
+//           ) : (
+//             <>
+//               {basket.map((item, i) => (
+//                 <div key={i} className={classes.cart_item}>
+//                   <div>
+//                     <h4>{item.title}</h4>
+//                     <p>Price: ${item.price}</p>
+//                     <p>
+//                       Quantity:{" "}
+//                       <input
+//                         type="number"
+//                         value={localQuantities[item.id]}
+//                         min="1"
+//                         onChange={(e) =>
+//                           handleQuantityChange(
+//                             item.id,
+//                             parseInt(e.target.value)
+//                           )
+//                         }
+//                       />
+//                     </p>
+//                   </div>
+//                   <button
+//                     className={classes.remove_button}
+//                     onClick={() => handleRemove(item.id)}
+//                   >
+//                     Remove
+//                   </button>
+//                 </div>
+//               ))}
+//               {/* Cart Total */}
+//               <div className={classes.cart_total}>
+//                 <h3>Cart Total: ${calculateTotal().toFixed(2)}</h3>
+//               </div>
+//             </>
+//           )}
+//         </div>
+//       </section>
+//     </LayOut>
+//   );
+// }
+
+// export default Cart;
+
+
+//   const handleQuantityChange = (id, quantity) => {
+//     if (quantity >= 1) {
+//       dispatch({
+//         type: Type.UPDATE_QUANTITY,
+//         id,
+//         quantity,
+//       });
+//     }
+//   };
+
+
+
+
+
+//   return (
+//     <LayOut>
+//       <section className={classes.container}>
+//         <div className={classes.cart_container}>
+//         <hr />
+//         {basket?.length === 0 ? (<p>No items in your cart</p>): 
+//             {basket?.map((item) => {
+//               return<ProductCard
+//                   key={item.id}
+//                   product={item}
+//                   renderDesc={true}
+//                   flex={true}
+//                   renderAdd={false}
+//                 />
+//             })
+//         )
+//     }
+//     </div>
+//         {/* Subtotal */}
+//         {basket?.length !== 0 && (
+//           <div>
+//             <div>
+//               <p>Subtotal({basket?.length} items)</p>
+//               <CurrencyFormat amount={total} />
+//             </div>
+//             <span>
+//               <input type="checkbox" />
+//               <small>This order contains a gift</small>
+//             </span>
+//             <Link to="payments">Continue to checkout</Link>
+//           </div>
+//         )}
+//       </section>
+//     </LayOut>

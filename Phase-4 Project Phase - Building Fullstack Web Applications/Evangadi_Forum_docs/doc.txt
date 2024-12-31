@@ -1,0 +1,109 @@
+Evangadi-forum project  procedure documentation
+************************************************
+ 1. Database setup (mysql)
+   - start up Wamp server or  other whatever you are using Database server
+   - open  phpMyAdmin and login
+   -click on Databases & create by giving your database name under create database and click on create button
+   -now you can create table using two method
+   1. using SQL query/queries on server “MySQL”:
+      - click on database you created 
+      - click on SQL
+      - by giving table name write query in a given space (creating  tables and rows under table)
+      - do for all tables you have and click on Go
+   2. you can write query in backend server and  up on sending request, the table will be created.
+    - database must be connected with server 
+  Creating user account and giving privilege to database
+   - click on Home at the top left corner under phpMyAdmin
+   - click on user accounts
+   - click add user account under new button
+   - fill out the login information
+      - username-
+      - hostname-
+      - password
+     make sure to save /remember your password,hostname and username
+  - then scroll down the screen and click on Go
+  - to add privilege again click on home and click on user account 
+  -under username click on account you want to give database privilege 
+  - click on Database
+  -choice database or write down in a given button
+  -then click on Go
+  - tick check all button and click on Go
+ 2.  Backend set up:
+  - create backend folder & open with terminal
+  - initiate node to create server and connect with db
+  - on terminal run: npm init 
+  - install dependencies
+    - you can install all needed dependencies once
+    i.e npm i . . . . . (name of each dependency) 
+  npm dependencies needed for backend are:
+ - express
+ - mysql2
+ - nodemon
+ - dotenv
+ - crpto
+ - keyword-extractor
+ - jsonwebtoken(jwt)
+    -https://jwt.io/introduction
+    -https://www.npmjs.com/package/jsonwebtoken
+ - bcrypt
+   -https://www.npmjs.com/package/bcrypt
+ - validator
+ - http-status-code 
+   In Postman, status codes are used to summarize the nature of a server's response. Here are some examples of status codes and what they mean: 
+   common used http-status-code are:
+    -200  OK: 
+      A successful response to a GET, PUT, PATCH, or DELETE request 
+    -201 Created: 
+      A response to a POST request that results in a creation 
+    -204 No Content: 
+      A successful request that doesn't return a body 
+   -400 Bad Request: 
+      The request was malformed or invalid 
+   -401 Unauthorized: 
+      The client needs to authenticate to access the requested resource 
+   -403 Forbidden: 
+      The client is authenticated but doesn't have access to the requested resource 
+   -404 Not Found: 
+      The requested resource doesn't exist 
+   -422 Unprocessable Entity: 
+      The server understands the request but can't process the instructions 
+   -500 Internal Server Error: 
+      A system or application error that indicates something unexpected happened on the server 
+  You can use Postman to test the response code returned by an API.
+  for full info: 
+    - https://www.npmjs.com/package/http-status-codes
+    - https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
+    - https://www.restapitutorial.com/httpstatuscodes
+ 3. Backend folder structure
+  -after initiate node you will get package.js file containing dependencies & some info.
+  - create index.js or app.js file to write the backend server code and baseurl end point.
+  - create db folder & inside dbConfig.js file to configure database connection
+  -create route folder & inside it create: 
+    - userRoute.js, 
+    - questionRoutes.js & 
+    - answerRoute.js files 
+      to manage dynamic routing api (end point) using express router method.
+  - create controller folder and inside the folder create:
+    - userController.js, 
+    - questionController.js & 
+    - answerController.js files
+      these controller files are used to write any logic code, validation handle & manage easily the different functionality separately (by connecting to bd it controls the insertion and selection as well validation).
+  - create middleware folder and inside it create:
+    - middleware.js  
+      --> this is used to control the user authorization (i.e by checking  the user token it verify whether the user has token or not )
+  - .env file to save secret key 
+  - .gitignore to avoid secret key and node_modules from github(to hide)
+-Additional information.
+we can use to method to handle import export modules  
+  1.  commonJS module  ---- > nodejs
+  2. ES6 style module[import/export]
+
+Postman
+- we can check get method simply/directly by using browser (url/endpoints on browser)
+ but for post method we can not directly use browser, we have to use some another  form to be the user send their data to the backend (i.e using frontend send to backend) so for developer, to handle easily the HTTP method request we can use postman api and check our response by sending request using using different http method (get post, delete,etc) with corresponding url.
+
+To generate jwt-secret run: 
+  node -e "console.log(require('crypto').randomBytes(32).toString('hex'))"
+on terminal as it is and it will generate random number 32byte and convert it to string this the best practice to use as jwt-secret.
+
+

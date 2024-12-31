@@ -1,0 +1,31 @@
+
+Advantages of using Redux with React
+**************************************
+1. Centralized state management system
+   i.e. Store:
+   - React state is stored locally within a component. To share this state with other components in the application, props are passed to child components, or callbacks are used for parent components.
+   - Redux state, on the other hand, is stored globally in the store.
+   - All the components of the entire application can easily access the data directly.
+   - This centralizes all data and makes it very easy for a component to get the state it requires.
+2. Performance Optimizations:
+   By default, whenever a component is updated, React re-renders all the components inside that part of the component tree.
+   - In such a case when the data for a given component hasn’t changed, these re-renders are wasted (cause the UI output displayed on the screen would remain the same).
+   - Redux store helps in improving the performance by skipping such unnecessary re-renders and ensuring that a given component re-renders only when its data has actually changed.
+3. Pure reducer functions:
+   A pure function is defined as any function that doesn’t alter input data, doesn’t depend on the external state, and can consistently provide the same output for the same input. As opposed to React, Redux depends on such pure functions.
+   - It takes a given state (object) and passes it to each reducer in a loop.
+   - In case of any data changes, a new object is returned from the reducer (re-rendering takes place). However, the old object is returned if there are no changes (no re-rendering).
+4. Time-travel Debugging:
+   - In React, it becomes a tedious task to track the state of the application during the debugging process.
+   - Redux makes debugging the application an easy process.
+   - Since it represents the entire state of an application at any given point in time, it is widely used for time-travel debugging.
+   - It can even send complete error reports to the server!
+5. Great supportive community:
+  - Since redux has a large community of users, it becomes easier to learn about best practices, get help when stuck, reuse your knowledge across different applications
+  - Also, there are a number of extensions for redux that help in simplifying the code logic and improving the performance.
+
+Conclusion:
+***********
+  - Using Redux with ReactJS brings several advantages to your application development process. It offers centralized state management, predictable state updates, efficient component communication, scalability, and benefits from a thriving ecosystem and community support. 
+  - By combining the strengths of ReactJS and Redux, you can build robust, maintainable, and scalable applications with ease.
+

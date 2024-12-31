@@ -1,0 +1,29 @@
+.header__container {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  padding: 10px 20px;
+  background-color: white;
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+.header__wrapper {
+  padding: 10px 40px;
+  margin-left: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__title {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.header__title button {
+  color: white;
+  padding: 10px 30px;
+  background-color: #516cf0;
+  border: none;
+  border-radius: 5px;
+}

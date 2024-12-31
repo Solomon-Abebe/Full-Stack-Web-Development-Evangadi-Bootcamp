@@ -1,0 +1,83 @@
+What is Redux?
+Redux is a predictable state container for JavaScript apps.
+
+1. State container
+ -consider a react app state of a component
+ -State of an app is the state represented by all individual react components of our app
+ - redux will store & manage the application state.
+2.Redux is predictable: the state of the application can change
+ - In redux, all state transitions are explicit & it is possible to keep track of them.
+ - the changes to our applications state become predictable
+ - (initial state , action )------> updated state
+
+Three principles:
+1. A store   --> holds the state of our application
+  - the state of our whole application is stored in an object tree within a single store
+  - Maintain our application state in a single object w/c would be managed by the redux store.
+  - Implementation: 
+    To build the redux store we use the redux library's createStore function and send a redux as an argument
+2. An action --> describes the changes in the state of the application.
+ - The only way to change the state is to emit an action, an object describing what happened
+ - To update the state of our app, we need to let redux know about that with an action.
+ - Implementation: 
+   - actions are simply objects that explain changes to the state
+   - we define an object with a type property & other data required to describe the change to make an action.
+   - we can define constant string variable that define the action separately, & create action function.
+  
+3. A reducer --> carries out the state transition depending on the action
+ - To specify how the state tree is transformed by actions, we write pure js functions  reducers
+ - implementation: 
+  - reducer are pure js function that accept the current state & an action & return next state
+ - Reducer --> (previousState, action) => newState
+
+ 4. connecting components to redux
+  - we use the react redux library's connect function to connect a redux store to react components
+  - import connect from react-redux
+  - connect a redux store to a react component at export like:
+    export default connect(arg1, arg2)(component)
+  connect function accept two arguments
+  1. mapStateToProps(for Extracting data) as arg1
+   - is used for selecting the part of the data from the store that the connected components
+   - This function should be passed as the first argument to connect, and will be called every time when the Redux store state changes. If you do not wish to subscribe to the store, pass null or undefined to connect in place of mapStateToProps.
+   - It should take a first argument called state, optionally a second argument called ownProps, and return a plain object containing the data that the connected component needs.
+   example: 
+    const mapStateToProps = (state ownProps) => {
+     return {
+        // Specify which properties should 
+        // be mapped to props
+        todos: state.todos
+      };
+    };
+    2. mapDispatchToProps (for Dispatching Actions) as arg2
+      - As the second argument passed in to connect, mapDispatchToProps is used for    dispatching actions to the store.
+      - With React Redux, ur components never access the store directly 
+      - connect does it for us. 
+      - connect can accept an argument called mapDispatchToProps, which lets you create functions that dispatch when called, and pass those functions as props to your component.
+
+      const mapDispatchToProps = (dispatch) => {
+        return {
+         // dispatching plain actions 
+         todos: ()=> dispatch(todos())
+        };
+      };
+
+finally rap store to component app component to share state for all components needed.
+import { Provider } from "react-redux";
+import store from "./redux/store.js";
+
+createRoot(document.getElementById("root")).render(
+  // <StrictMode>
+  <BrowserRouter>
+    <Provider store={store}>
+      <App />
+    </Provider>
+  </BrowserRouter>
+  // </StrictMode>
+);
+
+
+
+   
+
+
+
